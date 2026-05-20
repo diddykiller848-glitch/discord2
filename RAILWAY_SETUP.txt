@@ -1,19 +1,20 @@
-# Railway Environment Variables
-
-Add these variables in Railway:
-
-DISCORD_TOKEN
-- Your Discord bot token from Discord Developer Portal
-
-DISCORD_CLIENT_ID
-- Your bot application ID
-
-DISCORD_GUILD_ID
-- Optional
-- Your test server ID for faster slash command updates
-
-Start Command:
-npm start
-
-Build Command:
-npm install
+{
+  "name": "@workspace/discord-bot",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.2"
+  }
+}
