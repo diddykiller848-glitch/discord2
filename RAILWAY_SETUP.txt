@@ -1,0 +1,19 @@
+# Railway Environment Variables
+
+Add these variables in Railway:
+
+DISCORD_TOKEN
+- Your Discord bot token from Discord Developer Portal
+
+DISCORD_CLIENT_ID
+- Your bot application ID
+
+DISCORD_GUILD_ID
+- Optional
+- Your test server ID for faster slash command updates
+
+Start Command:
+npm start
+
+Build Command:
+npm install
